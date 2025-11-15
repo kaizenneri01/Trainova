@@ -2,17 +2,22 @@
   "name": "@trainova/shared",
   "version": "1.0.0",
   "private": true,
-  "description": "Shared code and types across the monorepo",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "description": "Shared utilities, types, and constants",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
   "scripts": {
     "build": "tsc",
-    "lint": "eslint src",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "dev": "tsc --watch"
   },
   "devDependencies": {
-    "@trainova/config": "workspace:*",
-    "typescript": "^5.3.3",
-    "eslint": "^8.55.0"
+    "typescript": "^5.3.3"
   }
 }

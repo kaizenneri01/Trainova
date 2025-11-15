@@ -24,6 +24,20 @@ importers:
         specifier: ^5.3.3
         version: 5.9.3
 
+  packages/config: {}
+
+  packages/shared:
+    devDependencies:
+      '@trainova/config':
+        specifier: workspace:*
+        version: link:../config
+      eslint:
+        specifier: ^8.55.0
+        version: 8.57.1
+      typescript:
+        specifier: ^5.3.3
+        version: 5.9.3
+
 packages:
 
   '@eslint-community/eslint-utils@4.9.0':
