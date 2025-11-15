@@ -1,0 +1,24 @@
+{
+  "name": "@trainova/backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend API server",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "node --watch --loader ts-node/esm src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@trainova/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@trainova/config": "workspace:*",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3",
+    "eslint": "^8.55.0",
+    "ts-node": "^10.9.2"
+  }
+}

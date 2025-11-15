@@ -1,0 +1,20 @@
+{
+  "name": "trainova",
+  "version": "1.0.0",
+  "description": "Full-stack monorepo with backend, frontend, and shared packages",
+  "private": true,
+  "packageManager": "pnpm@10.13.1",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check"
+  },
+  "devDependencies": {
+    "turbo": "^2.6.1",
+    "typescript": "^5.3.3",
+    "@typescript-eslint/parser": "^6.13.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "eslint": "^8.55.0"
+  }
+}
