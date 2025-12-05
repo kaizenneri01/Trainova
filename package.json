@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Full-stack monorepo with backend, frontend, and shared packages",
   "private": true,
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@8.15.9",
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
