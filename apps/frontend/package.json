@@ -1,19 +1,23 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
+  "name": "@trainova/frontend",
+  "version": "1.0.0",
   "private": true,
+  "description": "Frontend Next.js application",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint src",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "next": "16.0.3",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "@trainova/shared": "workspace:*"
   },
   "devDependencies": {
+    "@trainova/config": "workspace:*",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
