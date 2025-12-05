@@ -48,6 +48,9 @@ importers:
 
   apps/frontend:
     dependencies:
+      '@trainova/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
       next:
         specifier: 16.0.3
         version: 16.0.3(@babel/core@7.28.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -61,6 +64,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4
         version: 4.1.17
+      '@trainova/config':
+        specifier: workspace:*
+        version: link:../../packages/config
       '@types/node':
         specifier: ^20
         version: 20.19.25
